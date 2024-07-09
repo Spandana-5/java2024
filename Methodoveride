@@ -1,0 +1,19 @@
+class MethodOver{
+void show(int a,int b){
+System.out.println("2 arg int method");
+}
+void show(double a,double b){
+System.out.println(" 2 arg double method");
+}
+void show(int a,int b,int c){
+System.out.println(" 3 arg int method");
+}
+}
+class MethodOveride{
+public static void main(String[] args){
+MethodOver obj=new MethodOver();
+obj.show(10,20);
+obj.show(12.4,78.9);
+obj.show(10,20,30);
+}
+}
