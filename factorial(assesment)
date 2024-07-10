@@ -1,0 +1,25 @@
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        while(t>0){
+        int n=sc.nextInt();
+        
+         int i = 1;
+        int f = 1;
+        
+        
+        while (f<n) {
+            i++;
+            f *= i;
+        
+        if(n==f){
+            System.out.println(i);
+            break;
+        }
+        }
+        t--;
+        }
+    }
+}
